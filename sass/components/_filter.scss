@@ -1,0 +1,46 @@
+@import '../utils/allButton';
+.filter {
+
+    padding-top: 94px;
+    padding-bottom: 94px;
+    min-width: 480px;
+
+    @media screen and (min-width:768px) {
+        width: 768px;
+    }
+    @media screen and (max-width:1199px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    @media screen and (min-width:1200px) {
+        width: 1200px;
+    }
+
+    
+
+    &__list {
+
+        display: flex;
+        justify-content: center;
+
+        margin-bottom: 50px;
+        gap: 15px 8px;
+
+       
+
+        
+
+        @media screen and (max-width:767px) {
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            margin-bottom: 40px;
+        }
+
+    }
+    &__item:nth-child(3) {
+        @media screen and (max-width:767px) {
+            margin-right: auto;
+            width: 30%;
+        }
+    }
+}

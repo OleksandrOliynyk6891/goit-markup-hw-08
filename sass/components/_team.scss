@@ -1,0 +1,71 @@
+.team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $sectionBackgroundColor;
+    min-width: 480px;
+    margin: 0 auto;
+    
+    &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $gapPrimari;
+
+
+    }
+
+
+    &__image {
+        width: 354px;
+        height: 374px;
+        @media screen and (max-width:767px){
+            width: 450px;
+            height: 460px;
+        }
+        @media screen and (min-width:1200px) {
+            width:270px;
+            height:260px;
+        }
+    }
+
+    &__card {
+        padding-top: 30px;
+        padding-bottom: 24px;
+    }
+    &__subtitle {
+        margin: 0px;
+        margin-bottom: 10px;
+        text-align: center;
+        
+        font-size: 16px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+
+        font-weight: 500;
+        color:$primariTextColor;
+    }
+    &__text {
+        margin: 0px;
+        margin-bottom: 16px;
+    
+        text-align: center;
+        
+        font-size: 16px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+        color: $secondariTextCol;
+    } 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

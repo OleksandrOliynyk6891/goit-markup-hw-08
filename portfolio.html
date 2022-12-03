@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="./sass/utils/modern-normalize.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+    <title>Портфоліо</title>
+</head>
+<body>
+<!-- page-header-->
+<header class="header">
+    <div class="container header__item">
+            <!--site logo-->
+            <a class="logo" href="./index.html"><span>Web</span><span class="logo__roof">Studio</span></a>
+            <!--section navigation menu-->
+            <button class="mobile__button is-open" data-menu-button aria-controls="header__menu" aria-expanded="false" type="button" aria-label="Перемикач мобільного меню">
+                <svg class="mobile__icon" width="40" height="40" >
+                    <use class="icon__meny" href="./images/icons.svg#icon-menu"></use>
+                    <use class="icon__cross" href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <div class="header__menu is-open" id="header__menu" data-menu>
+                <nav class="nav">
+                    <ul class="list nav__list ">
+                        <!--links to sections-->
+                        <li class="nav__item">
+                            <a class="nav__link" href="./index.html">Студія</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link current" href="./portfolio.html">Портфоліо</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Контакти</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!--links contact us-->
+                <ul class="list nav__list--contact">
+                    <!--header e-mail address -->
+                    <li class="nav__item--contact">
+                        <a class="nav__link--contact" href="mailto:info@devstudio.com">
+                            <svg class="nav__icon" width="16" height="12">
+                                <use href="./images/icons.svg#icon-envelope"></use>
+                            </svg>
+                            info@devstudio.com
+                        </a>
+                    </li>
+                    <!--header contact phone-->
+                    <li class="nav__item--contact">
+                        <a class="nav__link--contact" href="tel:+380961111111">
+                            <svg class="nav__icon" width="10" height="16">
+                                <use href="./images/icons.svg#icon-smartphone"></use>
+                            </svg>
+                            +38 096 111 11 11
+                        </a>
+                    </li>
+                </ul>
+                <div class="header__social">
+                    <ul class="social">
+                        <li class="social__item">
+                            <a class="social__item--menu" href="#">
+                                Instagram
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__item--menu" href="#">
+                                Twitter
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__item--menu" href="#">
+                            Facebook
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__item--menu" href="#">
+                                LinkedIn
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </div>
+    </header>
+<!--main page content-->
+    <main class="main">
+        <section class="filter">
+            <div class="container">
+                <h1 class="visualli-hiden">Our works</h1>
+                <!-- button -->
+                <ul class="list filter__list">
+                    <li class="filter__item">
+                        <button class="button__filter" type="button">Усі</button>
+                    </li>
+                    <li class="filter__item">
+                        <button class="button__filter" type="button">Веб-сайти</button>
+                    </li>
+                    <li class="filter__item">
+                        <button class="button__filter" type="button">Додатки</button>
+                    </li>
+                    <li class="filter__item">
+                        <button class="button__filter" type="button">Дизайн</button>
+                    </li>
+                    <li class="filter__item">
+                        <button class="button__filter" type="button">Маркетинг</button>
+                    </li>
+                </ul>
+            
+        <!-- examples of work -->
+        <ul class="list examples__list">
+            <li class="examples__item">
+                <a class="examples__link" href="#">
+                    <div class="thumb">
+                        <p class="thumb__overlai"> Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                        <img class="thumb__image" src="./images/technoduck-450.jpg" alt="a laptop with a website" title="a laptop with a website" width="370"
+                            height="294">
+                    </div>
+                    <div class="thumb__item">
+                        <h2 class="thumb__title">Технокряк</h2>
+                        <p class="thumb__text">Веб-сайт</p>
+                    </div>
+                </a>
+                
+            </li>
+            <li class="examples__item">
+                <a class="examples__link" href="#">
+                <div class="thumb">
+                    <p class="thumb__overlai"> Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
+                        дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                    
+                        <img class="thumb__image" src="./images/new-orleans-vs-golden-star-poster.jpg" alt="new orleans vsgolden star poster"
+                            title="new orleans vsgolden star poster" width="370" height="294">
+                </div>
+                    <div class="thumb__item">
+                        <h2 class="thumb__title">Постер New Orlean vs Golden Star</h2>
+                        <p class="thumb__text">Дизайн</p>
+                    </div>
+                </a>
+            </li>
+            <li class="examples__item">
+                <a class="examples__link" href="#">
+                <div class="thumb">
+                    <p class="thumb__overlai"> Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
+                        дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                   
+                        <img class="thumb__image" src="./images/seafood-restaurant.jpg" al                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </div>
+    </header>
+<!--main page content-->
+    <main class="main">
+        <section class="filter">
+            <div class="container">
+                <h1 class="visualli-hiden">Our works</h1>
+                <!-- button -->
+                <ul class="list filter__list">
+                    <li class="filter__item">
+                        <button class="button__filter" type="button">Усі</button>
+                    </li>
+                    <li class="filter__item">
+                        <button class="button__filter" type="button">Веб-сайти</button>
+                    </li>
+                    <li class="filter__item">
+                        <button class="button__filter" type="button">Додатки</button>
+                    </li>
+                    <li class="filter__item">
+                        <button class="button__filter" type="button">Дизайн</button>
+                    </li>
+                    <li class="filter__item">
+                        <button class="button__filter" type="button">Маркетинг</button>
+                    </li>
+                </ul>
+            
+        <!-- examples of work -->
+        <ul class="list examples__list">
+            <li class="examples__item">
+                <a class="examples__link" href="#">
+                    <div class="thumb">
+                        <p class="thumb__overlai"> Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                        <img class="thumb__image" src="./images/technoduck-450.jpg" alt="a laptop with a website" title="a laptop with a website" width="370"
+                            height="294">
+                    </div>
+                    <div class="thumb__item">
+                        <h2 class="thumb__title">Технокряк</h2>
+                        <p class="thumb__text">Веб-сайт</p>
+                    </div>
+                </a>
+                
+            </li>
+            <li class="examples__item">
+                <a class="examples__link" href="#">
+                <div class="thumb">
+                    <p class="thumb__overlai"> Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
+                        дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                    
+                        <img class="thumb__image" src="./images/new-orleans-vs-golden-star-poster.jpg" alt="new orleans vsgolden star poster"
+                            title="new orleans vsgolden star poster" width="370" height="294">
+                </div>
+                    <div class="thumb__item">
+                        <h2 class="thumb__title">Постер New Orlean vs Golden Star</h2>
+                        <p class="thumb__text">Дизайн</p>
+                    </div>
+                </a>
+            </li>
+            <li class="examples__item">
+                <a class="examples__link" href="#">
+                <div class="thumb">
+                    <p class="thumb__overlai"> Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
+                        дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                   
+                        <img class="thumb__image" src="./images/seafood-restaurant.jpg" alt="seafood restaurant" title="seafood restaurant" width="370"
+                            height="294">
+                </div>
+                    <div class="thumb__item">
+                        <h2 class="thumb__title">Ресторан Seafood</h2>
+                        <p class="thumb__text">Додаток</p>
+                    </div>
+                </a>
+            </li>
+            <li class="examples__item">
+                <a class="examples-link" href="#">
+                <div class="thumb">
+                    <p class="thumb__overlai"> Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
+                    дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                   
+                    <img class="thumb__image" src="./images/project-prime.jpg" alt="headphone" title="headphone" width="370" height="294">
+                </div>
+                    <div class="thumb__item">
+                        <h2 class="thumb__title">Проєкт Prime</h2>
+                        <p class="thumb__text">Маркетинг</p>
+                    </div>
+                </a>
+            </li>
+            <li class="examples__item">
+                <a class="examples__link" href="#">
+                <div class="thumb">
+                    <p class="thumb__overlai"> Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
+                        дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+    
+                        <img class="thumb__image" src="./images/boxes-450.jpg" alt="two boxes" title="two boxes" width="370" height="294">
+                </div>
+                    
+                    <div class="thumb__item">
+                        <h2 class="thumb__title">Проєкт Boxes</h2>
+                        <p class="thumb__text">Додаток</p>
+                    </div>
+                </a>
+            </li>
+            <li class="examples__item">
+                <a class="examples__link" href="#">
+                <div class="thumb">
+                    <p class="thumb__overlai"> Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
+                        дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                    
+                        <img class="thumb__image" src="./images/inspiration-has-no-borders.jpg" alt="monitor with software" title="monitor with software"
+                            width="370" height="294">
+                </div>
+                        <div class="thumb__item">
+                            <h2 class="thumb__title">Inspiration has no Borders</h2>
+                            <p class="thumb__text">Веб-сайт</p>
+                        </div>
+                </a>
+            </li>
+            <li class="examples__item">
+                <a class="examples__link" href="#">
+                <div class="thumb">
+                    <p class="thumb__overlai"> Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
+                        дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                   
+                        <img class="thumb__image" src="./images/edition-limited-edition.jpg" alt="magazine limited edition" title="magazine limited editio"
+                 t="seafood restaurant" title="seafood restaurant" width="370"
+                            height="294">
+                </div>
+                    <div class="thumb__item">
+                        <h2 class="thumb__title">Ресторан Seafood</h2>
+                        <p class="thumb__text">Додаток</p>
+                    </div>
+                </a>
+            </li>
+            <li class="examples__item">
+                <a class="examples-link" href="#">
+                <div class="thumb">
+                    <p class="thumb__overlai"> Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
+                    дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                   
+                    <img class="thumb__image" src="./images/project-prime.jpg" alt="headphone" title="headphone" width="370" height="294">
+                </div>
+                    <div class="thumb__item">
+                        <h2 class="thumb__title">Проєкт Prime</h2>
+                        <p class="thumb__text">Маркетинг</p>
+                    </div>
+                </a>
+            </li>
+            <li class="examples__item">
+                <a class="examples__link" href="#">
+                <div class="thumb">
+                    <p class="thumb__overlai"> Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
+                        дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+    
+                        <img class="thumb__image" src="./images/boxes-450.jpg" alt="two boxes" title="two boxes" width="370" height="294">
+                </div>
+                    
+                    <div class="thumb__item">
+                        <h2 class="thumb__title">Проєкт Boxes</h2>
+                        <p class="thumb__text">Додаток</p>
+                    </div>
+                </a>
+            </li>
+            <li class="examples__item">
+                <a class="examples__link" href="#">
+                <div class="thumb">
+                    <p class="thumb__overlai"> Ресурс проп�

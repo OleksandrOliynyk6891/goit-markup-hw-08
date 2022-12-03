@@ -1,0 +1,49 @@
+.list {
+
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    // outline: solid 1px red;
+    
+
+    &__item {
+        position: relative;
+        background-color: $primariBackgroundColor;
+        margin-left: auto;
+        margin-right: auto;
+        width: 354px;
+       
+
+        @media screen and (max-width:767px) {
+                width: 450px;
+                
+                &:not(:last-child) {
+               margin-bottom: 30px;
+                
+            }
+
+
+        }
+            @media screen and (min-width:1200px) {
+                width: 270px;
+            }
+
+  
+    }
+
+    &__item--address {
+        position: relative;
+        background-color: $secondariBackgroundColor;
+    }
+
+}
+
+.list .nav__list {
+    display: inline-flex;
+    gap:0;
+}
+
+.list .nav__list--left {
+    display: inline-flex;
+    gap: 0;
+}

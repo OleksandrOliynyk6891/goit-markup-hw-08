@@ -1,0 +1,67 @@
+@import '../utils/allButton';
+
+
+.features {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    min-width: 480px;
+    margin: 0 auto;
+
+
+    &__list {
+
+        @media screen and (min-width:768px) {
+            display: flex;
+            flex-wrap: wrap;
+            gap: $gapPrimari;
+        }
+        @media screen and (min-width:1200px) {
+            display: flex;
+            flex-wrap: nowrap;
+            gap: $gapPrimari;
+        }
+    }
+
+
+    &__subtitle {
+        margin-top: 0px;
+        margin-bottom: 10px;
+
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+
+        text-align: center;
+
+        @media screen and (min-width:768px) {
+            text-align: start;
+
+        }
+        
+    }
+
+    &__text {
+        margin: 0px;
+        
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        
+        color: $secondariTextCol;
+    }
+    
+
+    &__icon {
+        @include Flexe ($type:flex, $axis: center, $transverse:center);
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        margin-bottom: 30px;
+        height: 120px;
+        background-color: $sectionBackgroundColor;
+    }
+    
+   
+}

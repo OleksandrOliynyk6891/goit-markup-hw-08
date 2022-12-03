@@ -1,0 +1,41 @@
+.header {
+    
+    position: fixed;
+   
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+   
+    border-bottom: 1px solid $colorBorderHeader;
+    background-color: $primariBackgroundColor;
+
+    z-index: 99;
+    
+    min-width: 480px;
+    margin: 0 auto;
+
+    @media screen and (width:768px) {
+        min-width: 768px
+    }
+   
+    &__item {
+        position: relative;
+        display: flex;
+        align-items: center;
+
+    }
+
+    &__social {
+        display: inline;
+         @media screen and (min-width:768px){
+                display: none;        
+         }
+
+        & .social {
+            justify-content: start;
+        }
+    }
+
+
+}
+

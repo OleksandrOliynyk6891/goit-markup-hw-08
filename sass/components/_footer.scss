@@ -1,0 +1,94 @@
+@import '../utils/allButton';
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    min-width: 480px;
+    margin: 0 auto;
+    
+    @media screen and (min-width: 768px) {
+        width: 768px
+    }
+    @media screen and (min-width: 1200px) {
+        width: 1200px
+    }
+    background: $secondariBackgroundColor;
+   
+   
+
+    &__contacts {
+        text-align: center;
+        @media screen and (min-width: 1200px) {
+                text-align: start;
+            }
+    }
+
+    &__title {
+        margin-top: 0px;
+        margin-bottom: 10px;
+        text-align: center;
+
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        color: $primariBackgroundColor;
+
+        @media screen and (min-width: 1200px) {
+            text-align: start;
+            }
+    }
+
+    &__item {
+        
+        @media screen and (min-width:768px) {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            justify-content: space-evenly;
+        }
+       
+        @media screen and (min-width:1200px) {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: baseline;
+            justify-content: space-between;
+        }
+    }
+    .address {
+        display: block;
+        font-style: normal;
+        margin-top: 20px;
+    
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+    
+    }
+
+    &__social {
+        margin-top: 60px;
+            
+        @media screen and (min-width: 1200px) {
+                margin-top:0;
+            }
+                
+            
+    }
+
+    &__form {
+            margin-top: 60px;
+
+        @media screen and (min-width: 768px) and (max-width: 1199px){
+            flex-grow: 1;
+
+        }
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            align-items: flex-end;
+            margin-top: 0px;
+        }
+    }
+}

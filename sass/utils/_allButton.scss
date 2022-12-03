@@ -1,0 +1,33 @@
+%button {
+
+    
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    cursor: pointer;
+    box-shadow: $buttonBoxShadow;
+    color: $buttonTextColor;
+    background-color: $buttonColor;
+    border-radius: 4px;
+    border: inherit;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover,
+    &:focus {
+        background-color: $buttonHoverFocus;
+    }
+
+}
+
+
+@mixin Flexe ($type, $axis, $transverse ) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+

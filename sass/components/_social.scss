@@ -1,0 +1,69 @@
+@import '../utils/allButton';
+
+.social {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+
+    gap: 10px;
+    // outline: solid 1px red;
+
+
+    
+    &__linc {
+
+        @include Flexe ($type: flex, $axis: center, $transverse: center);
+        
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+
+        padding: 0;
+        border-radius: 50%;
+
+        width: 44px;
+        height: 44px;
+
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &--light { 
+        color: $primariBackgroundColor;
+        fill:$iconFill;
+
+        &:hover,
+        &:focus {
+            background-color: $hovFocusColor;
+            fill: currentColor;
+        }
+    
+    }
+    &--dark {
+        background-color: $socialBackgroundColor;
+        fill: $primariBackgroundColor;
+
+        &:hover,
+        &:focus {
+            background-color: $hovFocusColor;
+            color: currentColor; 
+        }
+
+    }
+        
+}
+
+.social__item--menu {
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: #2196F3;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    
+    padding-right: 10px;
+}
+

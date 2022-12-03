@@ -1,0 +1,27 @@
+
+.address__geo--link {
+    color: $taglineColor;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        color: $hovFocusColor
+    }
+}
+
+.address__mail--link,
+.address__tel--link {
+    display: block;
+    color: $footerLinkColor;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: $hovFocusColor
+    }
+}
+
+.address--contact {
+    margin-top: 8px;
+}

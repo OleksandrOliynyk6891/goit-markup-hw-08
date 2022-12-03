@@ -1,0 +1,31 @@
+
+@import '../utils/allButton';
+
+.button--submit {
+    @extend %button;
+    // @include Flexe ($type: flex, $axis: center, $transverse: center);
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    min-width: 200px;
+    height: 50px;
+    padding: 10px 28px;
+    
+    border: inherit;
+
+    @media screen and (min-width: 768px) {
+         margin-top: 0;
+    }
+ 
+}
+.button__icon--end {
+    background-color:transparent;
+    margin-left: 10px;
+
+   
+}

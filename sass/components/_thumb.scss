@@ -1,0 +1,58 @@
+.thumb {
+    position: relative;
+    overflow: hidden; 
+
+    &__overlai {
+        position: absolute;
+        display: block;
+        transform: translateY(100%);
+    
+        margin: 0;
+        padding: 63px 24px;
+        width: 100%;
+        height: 100%;
+         color: $buttonTextColor;
+        background-color: rgba(33, 150, 243, 0.9);
+    
+        font-size: 18px;
+        line-height: 1.56;
+        letter-spacing: 0.03em;
+        
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);  
+    }
+    &__title {
+        margin: 0;
+        padding: 0;
+    
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+        color: $primariTextColor;
+    }
+    
+    &__text {
+        margin: 0;
+        padding: 0;
+        margin-top: 4px;
+    
+        font-size: 16px;
+        line-height: 2;
+        letter-spacing: 0.03em;
+        color: $secondariTextCol;
+    }
+    
+    &__item {
+    padding: 24px 20px;
+    
+    border-right: 1px solid $examplesItemBordcolor;
+    border-bottom: 1px solid $examplesItemBordcolor;
+    border-left: 1px solid $examplesItemBordcolor;
+    }
+
+    &__image {
+        display:block;
+        width: 450px;
+        height: 294px;
+    }
+}
