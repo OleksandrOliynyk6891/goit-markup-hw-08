@@ -17,13 +17,12 @@
             <!--site logo-->
             <a class="logo" href="./index.html"><span>Web</span><span class="logo__roof">Studio</span></a>
             <!--section navigation menu-->
-            <button class="mobile__button is-open" data-menu-button aria-controls="header__menu" aria-expanded="false" type="button">
-                <svg class="mobile__icon" width="40" height="40" aria-label="Перемикач мобільного меню" >
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg width="40" height="40"
+                 fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <use class="icon__menu" href="./images/icon1.svg#icon-menu"></use>
-                    <use class="icon__cross" href="./images/icon1.svg#icon-close"></use>
                 </svg>
             </button>
-            <div class="header__menu is-open" id="header__menu" data-menu>
                 <nav class="nav">
                     <ul class="list nav__list ">
                         <!--links to sections-->
@@ -38,12 +37,13 @@
                         </li>
                     </ul>
                 </nav>
-                <!--links contact us-->
+                <!-- links contact us -->
                 <ul class="list nav__list--contact">
-                    <!--header e-mail address -->
+                    <!-- header e-mail address -->
                     <li class="nav__item--contact">
                         <a class="nav__link--contact" href="mailto:info@devstudio.com">
-                            <svg class="nav__icon" width="16" height="12">
+                            <!-- width="16" height="12" -->
+                            <svg class="nav__icon--envelope" >
                                 <use class="nav__icon" href="./images/icons.svg#icon-envelope"></use>
                             </svg>
                             info@devstudio.com
@@ -51,39 +51,16 @@
                     </li>
                     <!--header contact phone-->
                     <li class="nav__item--contact">
+                        <!-- width="10" height="16" -->
                         <a class="nav__link--contact" href="tel:+380961111111">
-                            <svg class="nav__icon" width="10" height="16">
-                                <use href="./images/icons.svg#icon-smartphone"></use>
+                            <svg class="nav__icon--smartphone" >
+                                <use class="nav__icon" href="./images/icons.svg#icon-smartphone"></use>
                             </svg>
                             +38 096 111 11 11
                         </a>
                     </li>
                 </ul>
-                <div class="header__social">
-                    <ul class="social">
-                        <li class="social__item">
-                            <a class="social__item--menu" href="#">
-                                Instagram
-                            </a>
-                        </li>
-                        <li class="social__item">
-                            <a class="social__item--menu" href="#">
-                                Twitter
-                            </a>
-                        </li>
-                        <li class="social__item">
-                            <a class="social__item--menu" href="#">
-                            Facebook
-                            </a>
-                        </li>
-                        <li class="social__item">
-                            <a class="social__item--menu" href="#">
-                                LinkedIn
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+
     </div>
     </header>
                 <!--main page content-->
@@ -149,7 +126,17 @@
                 <ul class=" list work__list">
                     <li class="work__item">
                         <div class="work__thumb">
-                        <picture>
+                            <img
+                        srcset="
+                          ./images/production/desktop-370.jpg 370w,
+                          ./images/production/desktop-370@2x.jpg 740w,
+                        "
+                        src="./images/production/desktop-370.jpg"
+                        sizes="370px, 100vw"
+                        
+                        alt="close up image programer working his desk office"
+                      />
+                        <!-- <picture>
                             <source type="image/webp" 
                                     srcset="./images/production/desktop-370.webp 370w,
                                             ./images/production/desktop-370@2x.webp 740w"
@@ -166,13 +153,23 @@
                                  alt="close up image programer working his desk office"
                                  title="close up image programer working his desk office" 
                                  loading="lazy" />
-                        </picture>
+                        </picture> -->
                                 <p class="work__text">Десктопні додатки</p>
                             </div>
                     </li>
                     <li class="work__item">
                         <div class="work__thumb">
-                        <picture>
+                            <img
+                        srcset="
+                          ./images/production/mobile-370.jpg 370w,
+                          ./images/production/mobile-370@2x.jpg 740w,
+                        "
+                        src="./images/production/mobile-370.jpg"
+                        sizes="370px, 100vw"
+                        
+                        alt="web ui, designers are developing application smartphones team creators is working interface mobile"
+                      />
+                        <!-- <picture>
                             <source type="image/webp" 
                                     srcset="./images/production/mobile-370.webp 370w,
                                             ./images/production/mobile-370@2x.webp 740w"
@@ -189,13 +186,24 @@
                                  alt="web ui, designers are developing application smartphones team creators is working interface mobile" 
                                  title="web ui, designers are developing application smartphones team creators is working interface mobile"
                                  loading="lazy" />
-                        </picture>
+                        </picture> -->
                                 <p class="work__text">Мобільні додатки</p>
                         </div>
                     </li>
                     <li class="work__item">
                         <div class="work__thumb">
-                            <picture>
+
+                            <img
+                        srcset="
+                          ./images/production/graphic-tablet-370.jpg 370w,
+                          ./images/production/graphic-tablet-370@2x.jpg 740w,
+                        "
+                        src="./images/production/graphic-tablet-370.jpg"
+                        sizes="370px, 100vw"
+                        
+                        alt="close up image programer working his desk office"
+                      />
+                            <!-- <picture>
                                 <source type="image/webp" 
                                         srcset="./images/production/graphic-tablet-370.webp 370w,
                                                 ./images/production/graphic-tablet-370@2x.webp 740w"
@@ -212,7 +220,7 @@
                                      alt="close up image programer working his desk office"
                                      title="creative artist web design with working colour selection graphic tablet"
                                      loading="lazy" />
-                            </picture>
+                            </picture> -->
                     
                             <p class="work__text">Дизайнерські рішення</p>
                         </div>
@@ -228,7 +236,21 @@
                 <ul class="list team__list">
                     <!--employee card-->
                     <li class="list__item card">
-                        <picture>
+                        <img
+                        srcset="
+                          ./images/team/mobile/product-designer-450.jpg 450w,
+                          ./images/team/mobile/product-designer-450@2x.jpg 900w,
+                          ./images/team/tablet/product-designer-454.jpg 354w,
+                          ./images/team/tablet/product-designer-454@2x.jpg 708w,
+                          ./images/team/desktop/product-designer-270.jpg 270w,
+                          ./images/team/desktop/product-designer-270@2x.jpg 540w
+                        "
+                        src="./images/team/mobile/product-designer-450.jpg"
+                        sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                        
+                        alt="Product Designer"
+                      />
+                        <!-- <picture>
                             <source type="image/webp" 
                                     srcset="./images/team/mobile/product-designer-450 450w,
                                             ./images/team/mobile/product-designer-450@2x.webp 900w" 
@@ -269,7 +291,7 @@
                                  alt="a dark-haired man in glasses with a bodysuit in a dark shirt" 
                                  title="a dark-haired man in glasses with a bodysuit in a dark shirt" 
                                  loading="lazy" />
-                        </picture>
+                        </picture> -->
                         <div class="team__card">
                             <h3 class="team__subtitle">Ігор Дем'яненко</h3>
                             <p class="team__text">Product Designer</p>
@@ -305,7 +327,22 @@
                         </div>
                     </li>
                     <li class="list__item card">
-                        <picture>
+
+                        <img
+                        srcset="
+                          ./images/team/mobile/frontend-developer-450.jpg 450w,
+                          ./images/team/mobile/frontend-developer-450@2x.jpg 900w,
+                          ./images/team/tablet/frontend-developer-454.jpg 354w,
+                          ./images/team/tablet/frontend-developer-454@2x.jpg 708w,
+                          ./images/team/desktop/frontend-developer-270.jpg 270w,
+                          ./images/team/desktop/frontend-developer-270@2x.jpg 540w
+                        "
+                        src="./images/team/mobile/frontend-developer-450.jpg"
+                        sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                        
+                        alt="Frontend Developer"
+                      />
+                        <!-- <picture>
                             <source type="image/webp" 
                                     srcset="./images/team/mobile/frontend-developer-450 450w,
                                             ./images/team/mobile/frontend-developer-450@2x.webp 900w"
@@ -346,7 +383,7 @@
                                  alt="fair-haired woman in glasses in a classic suit"
                                  title="fair-haired woman in glasses in a classic suit" 
                                  loading="lazy" />
-                        </picture>
+                        </picture> -->
                         <div class="team__card">
                             <h3 class="team__subtitle">Ольга Рєпіна</h3>
                             <p class="team__text">Frontend Developer</p>
@@ -382,7 +419,21 @@
                         </div>
                     </li>
                     <li class="list__item card">
-                        <picture>
+                        <img
+                        srcset="
+                          ./images/team/mobile/marketing-450.jpg 450w,
+                          ./images/team/mobile/marketing-450@2x.jpg 900w,
+                          ./images/team/tablet/marketing-454.jpg 354w,
+                          ./images/team/tablet/marketing-454@2x.jpg 708w,
+                          ./images/team/desktop/marketing-270.jpg 270w,
+                          ./images/team/desktop/marketing-270@2x.jpg 540w
+                        "
+                        src="./images/team/mobile/marketing-450.jpg"
+                        sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                        
+                        alt="Marketing"
+                      />
+                        <!-- <picture>
                             <source type="image/webp" 
                                     srcset="./images/team/mobile/marketing-450 450w,
                                             ./images/team/mobile/marketing-450@2x.webp 900w"
@@ -425,7 +476,7 @@
                                  alt="a dark-haired man in a light classic shirt"
                                  title="fair-haired woman in glasses in a classic suit" 
                                  loading="lazy" />
-                        </picture>
+                        </picture> -->
                         
                         <div class="team__card">
                             <h3 class="team__subtitle">Микола Тарасов</h3>
@@ -463,7 +514,21 @@
                         </div>
                     </li>
                     <li class="list__item card">
-                        <picture>
+                        <img
+                        srcset="
+                          ./images/team/mobile/ui-designer-450.jpg 450w,
+                          ./images/team/mobile/ui-designer-450@2x.jpg 900w,
+                          ./images/team/tablet/ui-designer-454.jpg 354w,
+                          ./images/team/tablet/ui-designer-454@2x.jpg 708w,
+                          ./images/team/desktop/ui-designer-270.jpg 270w,
+                          ./images/team/desktop/ui-designer-270@2x.jpg 540w
+                        "
+                        src="./images/team/mobile/ui-designer-450.jpg"
+                        sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                        
+                        alt="Ui-designer"
+                      />
+                        <!-- <picture>
                             <source type="image/webp" 
                                     srcset="./images/team/mobile/ui-designer-450 450w,
                                             ./images/team/mobile/ui-designer-450@2x.webp 900w"
@@ -506,7 +571,7 @@
                                 title="a dark-haired man in glasses with a bodysuit in a dark shirt"
                                 title="dark-haired man in glasses, in a black T-shirt" width="270" height="260"
                                  loading="lazy" />
-                        </picture>
+                        </picture> -->
                         <div class="team__card">
                             <h3 class="team__subtitle">Михайло Єрмаков</h3>
                             <p class="team__text">UI Designer</p>
@@ -605,8 +670,7 @@
                 <!--footer site-->
     <footer class="footer">
                 <div class="container">
-                    <section class="footer__item">
-                        
+                    <div class="footer__item">
                         <div class="footer__contacts">
                             <!--footer site logo-->
                             <a class="logo" href="./index.html"><span>Web</span><span class="logo__basement">Studio</span></a>
@@ -614,7 +678,8 @@
                             <address class="address">
                                 <ul class="list">
                                     <li class="list__item--address">
-                                        <a class="address__geo--link address--contact" href="https://go.2gis.com/3j73v" target="_blank" rel="noopener noreferrer nofollow">м.
+                                        <a class="address__geo--link address--contact" href="https://go.2gis.com/3j73v" target="_blank"
+                                            rel="noopener noreferrer nofollow">м.
                                             Київ, пр-т Лесі Українки, 26</a>
                                     </li>
                                     <li class="list__item--address address--contact">
@@ -651,7 +716,7 @@
                                         </svg>
                                     </a>
                                 </li>
-                                <li class="social__item" >
+                                <li class="social__item">
                                     <a class="social__linc social--dark" href="#">
                                         <svg class="social__icon--linkedin" width="20" height="20">
                                             <use href="./images/icons.svg#icon-linkedin"></use>
@@ -660,20 +725,19 @@
                             </ul>
                         </div>
                         <!-- subscription form -->
-            
-                            <form class="footer__form" name="subscription-form">
-                                <label class="footer__label" id="subscription-form">Підпишіться на розсилку
-                                    <input class="footer__input" type="email" name="subscription-form" placeholder="E-mail" >
-                                </label>
-                                <button class="button button--submit" type="submit">Підписатися
-                                    <svg class="button__icon--end" width="24" height="24">
-                                        <use href="./images/icons.svg#icon-send"></use>
-                                    </svg>
-                                </button>
-
-                            </form>
-                            
-                    </section>
+                        
+                        <form class="footer__form" name="subscription-form">
+                            <label class="footer__label" id="subscription-form">Підпишіться на розсилку
+                                <input class="footer__input" type="email" name="subscription-form" placeholder="E-mail">
+                            </label>
+                            <button class="button button--submit" type="submit">Підписатися
+                                <svg class="button__icon--end" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-send"></use>
+                                </svg>
+                            </button>
+                        
+                        </form>
+                    </div>
                 </div>
     </footer>
 
@@ -729,7 +793,64 @@
         </button>
     </div>
     </div>
+
+    <!-- mobile-menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" 
+            width="40" height="40">
+                <use class="icon__cross" href="./images/icon1.svg#icon-close"></use>
+            </svg>
+        </button>
+    
+        <ul class="list mobile-menu">
+            <li class="mobile-item"><a href="./index.html" class="link curent--link">Студія</a></li>
+            <li class="mobile-item"><a href="./portfolio.html" class="link">Портфоліо</a></li>
+            <li class="mobile-item"><a href="#" class="link">Контакти</a></li>
+        </ul>
+        <ul class="list menu__list--contact">
+            <!--header e-mail address -->
+            <li class="menu__item--contact">
+            <a class="menu__link--mobile" href="tel:+380961111111">
+                +38 096 111 11 11
+            </a>
+            </li>
+            <!--header contact phone-->
+            <li class="menu__item--contact">
+                <a class="menu__link--messeg" href="mailto:info@devstudio.com">
+                    info@devstudio.com
+                </a>
+            </li>
+        </ul>
+        <div class="header__social">
+            <ul class="social">
+                <li class="social__item">
+                    <a class="social__item--menu" href="#">
+                        Instagram
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a class="social__item--menu" href="#">
+                        Twitter
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a class="social__item--menu" href="#">
+                        Facebook
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a class="social__item--menu" href="#">
+                        LinkedIn
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
     <script src="./js/modal.js"></script>
-    <script src="./js/mobileMeny.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+<script defer src="./js/mobile-menu.js"></script>
 </body>
 </html>
