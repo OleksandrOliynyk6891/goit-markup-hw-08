@@ -80,6 +80,7 @@ img {
 @media screen and (max-width: 767px) {
   .list__item {
     width: 450px;
+    outline: solid 1px red;
   }
   .list__item:not(:last-child) {
     margin-bottom: 30px;
@@ -88,6 +89,7 @@ img {
 @media screen and (min-width: 1200px) {
   .list__item {
     width: 270px;
+    outline: solid 1px red;
   }
 }
 .list__item--address {
