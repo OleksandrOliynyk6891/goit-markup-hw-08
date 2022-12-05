@@ -17,13 +17,12 @@
             <!--site logo-->
             <a class="logo" href="./index.html"><span>Web</span><span class="logo__roof">Studio</span></a>
             <!--section navigation menu-->
-            <button class="mobile__button is-open" data-menu-button aria-controls="header__menu" aria-expanded="false" type="button" aria-label="Перемикач мобільного меню">
-                <svg class="mobile__icon" width="40" height="40" >
-                    <use class="icon__meny" href="./images/icons.svg#icon-menu"></use>
-                    <use class="icon__cross" href="./images/icons.svg#icon-close"></use>
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg width="40" height="40"
+                 fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <use class="icon__menu" href="./images/icon1.svg#icon-menu"></use>
                 </svg>
             </button>
-            <div class="header__menu is-open" id="header__menu" data-menu>
                 <nav class="nav">
                     <ul class="list nav__list ">
                         <!--links to sections-->
@@ -31,59 +30,37 @@
                             <a class="nav__link" href="./index.html">Студія</a>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link current" href="./portfolio.html">Портфоліо</a>
+                            <a class="nav__link  current" href="./portfolio.html">Портфоліо</a>
                         </li>
                         <li class="nav__item">
                             <a class="nav__link" href="#">Контакти</a>
                         </li>
                     </ul>
                 </nav>
-                <!--links contact us-->
+                <!-- links contact us -->
                 <ul class="list nav__list--contact">
-                    <!--header e-mail address -->
+                    <!-- header e-mail address -->
                     <li class="nav__item--contact">
                         <a class="nav__link--contact" href="mailto:info@devstudio.com">
-                            <svg class="nav__icon" width="16" height="12">
-                                <use href="./images/icons.svg#icon-envelope"></use>
+                            <!-- width="16" height="12" -->
+                            <svg class="nav__icon--envelope" >
+                                <use class="nav__icon" href="./images/icons.svg#icon-envelope"></use>
                             </svg>
                             info@devstudio.com
                         </a>
                     </li>
                     <!--header contact phone-->
                     <li class="nav__item--contact">
+                        <!-- width="10" height="16" -->
                         <a class="nav__link--contact" href="tel:+380961111111">
-                            <svg class="nav__icon" width="10" height="16">
-                                <use href="./images/icons.svg#icon-smartphone"></use>
+                            <svg class="nav__icon--smartphone" >
+                                <use class="nav__icon" href="./images/icons.svg#icon-smartphone"></use>
                             </svg>
                             +38 096 111 11 11
                         </a>
                     </li>
                 </ul>
-                <div class="header__social">
-                    <ul class="social">
-                        <li class="social__item">
-                            <a class="social__item--menu" href="#">
-                                Instagram
-                            </a>
-                        </li>
-                        <li class="social__item">
-                            <a class="social__item--menu" href="#">
-                                Twitter
-                            </a>
-                        </li>
-                        <li class="social__item">
-                            <a class="social__item--menu" href="#">
-                            Facebook
-                            </a>
-                        </li>
-                        <li class="social__item">
-                            <a class="social__item--menu" href="#">
-                                LinkedIn
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+
     </div>
     </header>
 <!--main page content-->
@@ -116,8 +93,24 @@
                 <a class="examples__link" href="#">
                     <div class="thumb">
                         <p class="thumb__overlai"> Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
-                        <img class="thumb__image" src="./images/technoduck-450.jpg" alt="a laptop with a website" title="a laptop with a website" width="370"
-                            height="294">
+                        <img
+                        class="thumb__image"
+                        srcset="
+                          ../images/portfolio/mobile/technoduck-450.jpg 450w,
+                          ../images/portfolio/mobile/technoduck-450@2x.jpg 900w,
+                          ../images/portfolio/tablet/technoduck-354.jpg 354w,
+                          ../images/portfolio/tablet/technoduck-354@2x.jpg 708w,
+                          ../images/portfolio/desktop/technoduck-370.jpg 370w,
+                          ../images/portfolio/desktop/technoduck-370@2x.jpg 740w
+                        "
+                        src="../images/portfolio/mobile/technoduck-450.jpg"
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                        
+                        alt="technoduck"
+                      />
+                        
+                        <!-- <img class="thumb__image" src="./images/technoduck-450.jpg" alt="a laptop with a website" title="a laptop with a website" width="370"
+                            height="294"> -->
                     </div>
                     <div class="thumb__item">
                         <h2 class="thumb__title">Технокряк</h2>
@@ -131,9 +124,24 @@
                 <div class="thumb">
                     <p class="thumb__overlai"> Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                         дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                        <img
+                        class="thumb__image"
+                        srcset="
+                          ../images/portfolio/mobile/new-orleans-vs-golden-star-poster-450.jpg 450w,
+                          ../images/portfolio/mobile/new-orleans-vs-golden-star-poster-450@2x.jpg 900w,
+                          ../images/portfolio/tablet/new-orleans-vs-golden-star-poster-354.jpg 354w,
+                          ../images/portfolio/tablet/new-orleans-vs-golden-star-poster-354@2x.jpg 708w,
+                          ../images/portfolio/desktop/new-orleans-vs-golden-star-poster-370.jpg 370w,
+                          ../images/portfolio/desktop/new-orleans-vs-golden-star-poster-370@2x.jpg 740w
+                        "
+                        src="../images/portfolio/mobile/new-orleans-vs-golden-star-poster-450.jpg"
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                        
+                        alt="project new orleans vs golden star poster"
+                      />
                     
-                        <img class="thumb__image" src="./images/new-orleans-vs-golden-star-poster.jpg" alt="new orleans vsgolden star poster"
-                            title="new orleans vsgolden star poster" width="370" height="294">
+                        <!-- <img class="thumb__image" src="./images/new-orleans-vs-golden-star-poster.jpg" alt="new orleans vsgolden star poster"
+                            title="new orleans vsgolden star poster" width="370" height="294"> -->
                 </div>
                     <div class="thumb__item">
                         <h2 class="thumb__title">Постер New Orlean vs Golden Star</h2>
@@ -146,77 +154,24 @@
                 <div class="thumb">
                     <p class="thumb__overlai"> Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                         дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                        <img
+                        class="thumb__image"
+                        srcset="
+                          ../images/portfolio/mobile/seafood-restaurant-450.jpg 450w,
+                          ../images/portfolio/mobile/seafood-restaurant-450@2x.jpg 900w,
+                          ../images/portfolio/tablet/seafood-restaurant-354.jpg 354w,
+                          ../images/portfolio/tablet/seafood-restaurant-354@2x.jpg 708w,
+                          ../images/portfolio/desktop/seafood-restaurant-370.jpg 370w,
+                          ../images/portfolio/desktop/seafood-restaurant-370@2x.jpg 740w
+                        "
+                        src="../images/portfolio/desktop/seafood-restaurant-370.jpg"
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                        
+                        alt="seafood restaurant"
+                      />
                    
-                        <img class="thumb__image" src="./images/seafood-restaurant.jpg" al                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-    </div>
-    </header>
-<!--main page content-->
-    <main class="main">
-        <section class="filter">
-            <div class="container">
-                <h1 class="visualli-hiden">Our works</h1>
-                <!-- button -->
-                <ul class="list filter__list">
-                    <li class="filter__item">
-                        <button class="button__filter" type="button">Усі</button>
-                    </li>
-                    <li class="filter__item">
-                        <button class="button__filter" type="button">Веб-сайти</button>
-                    </li>
-                    <li class="filter__item">
-                        <button class="button__filter" type="button">Додатки</button>
-                    </li>
-                    <li class="filter__item">
-                        <button class="button__filter" type="button">Дизайн</button>
-                    </li>
-                    <li class="filter__item">
-                        <button class="button__filter" type="button">Маркетинг</button>
-                    </li>
-                </ul>
-            
-        <!-- examples of work -->
-        <ul class="list examples__list">
-            <li class="examples__item">
-                <a class="examples__link" href="#">
-                    <div class="thumb">
-                        <p class="thumb__overlai"> Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
-                        <img class="thumb__image" src="./images/technoduck-450.jpg" alt="a laptop with a website" title="a laptop with a website" width="370"
-                            height="294">
-                    </div>
-                    <div class="thumb__item">
-                        <h2 class="thumb__title">Технокряк</h2>
-                        <p class="thumb__text">Веб-сайт</p>
-                    </div>
-                </a>
-                
-            </li>
-            <li class="examples__item">
-                <a class="examples__link" href="#">
-                <div class="thumb">
-                    <p class="thumb__overlai"> Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
-                        дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
-                    
-                        <img class="thumb__image" src="./images/new-orleans-vs-golden-star-poster.jpg" alt="new orleans vsgolden star poster"
-                            title="new orleans vsgolden star poster" width="370" height="294">
-                </div>
-                    <div class="thumb__item">
-                        <h2 class="thumb__title">Постер New Orlean vs Golden Star</h2>
-                        <p class="thumb__text">Дизайн</p>
-                    </div>
-                </a>
-            </li>
-            <li class="examples__item">
-                <a class="examples__link" href="#">
-                <div class="thumb">
-                    <p class="thumb__overlai"> Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
-                        дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
-                   
-                        <img class="thumb__image" src="./images/seafood-restaurant.jpg" alt="seafood restaurant" title="seafood restaurant" width="370"
-                            height="294">
+                        <!-- <img class="thumb__image" src="./images/seafood-restaurant.jpg" alt="seafood restaurant" title="seafood restaurant" width="370"
+                            height="294"> -->
                 </div>
                     <div class="thumb__item">
                         <h2 class="thumb__title">Ресторан Seafood</h2>
@@ -229,8 +184,23 @@
                 <div class="thumb">
                     <p class="thumb__overlai"> Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                     дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                    <img
+                        class="thumb__image"
+                        srcset="
+                          ../images/portfolio/mobile/project-prime-450.jpg 450w,
+                          ../images/portfolio/mobile/project-prime-450@2x.jpg 900w,
+                          ../images/portfolio/tablet/project-prime-354.jpg 354w,
+                          ../images/portfolio/tablet/project-prime-354@2x.jpg 708w,
+                          ../images/portfolio/desktop/project-prime-370.jpg 370w,
+                          ../images/portfolio/desktop/project-prime-370@2x.jpg 740w
+                        "
+                        src="../images/portfolio/mobile/project-prime-450.jpg"
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                        
+                        alt="headphone"
+                      />
                    
-                    <img class="thumb__image" src="./images/project-prime.jpg" alt="headphone" title="headphone" width="370" height="294">
+                    <!-- <img class="thumb__image" src="./images/project-prime.jpg" alt="headphone" title="headphone" width="370" height="294"> -->
                 </div>
                     <div class="thumb__item">
                         <h2 class="thumb__title">Проєкт Prime</h2>
@@ -244,7 +214,22 @@
                     <p class="thumb__overlai"> Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                         дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
     
-                        <img class="thumb__image" src="./images/boxes-450.jpg" alt="two boxes" title="two boxes" width="370" height="294">
+                        <img
+                        class="thumb__image"
+                        srcset="
+                          ../images/portfolio/mobile/project-boxes-450.jpg 450w,
+                          ../images/portfolio/mobile/project-boxes-450@2x.jpg 900w,
+                          ../images/portfolio/tablet/project-boxes-354.jpg 354w,
+                          ../images/portfolio/tablet/project-boxes-354@2x.jpg 708w,
+                          ../images/portfolio/desktop/project-boxes-370.jpg 370w,
+                          ../images/portfolio/desktop/project-boxes-370@2x.jpg 740w
+                        "
+                        src="../images/portfolio/mobile/project-boxes-450.jpg"
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                        
+                        alt="two boxes"
+                      />
+                        <!-- <img class="thumb__image" src="./images/boxes-450.jpg" alt="two boxes" title="two boxes" width="370" height="294"> -->
                 </div>
                     
                     <div class="thumb__item">
@@ -258,9 +243,25 @@
                 <div class="thumb">
                     <p class="thumb__overlai"> Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                         дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+
+                        <img
+                        class="thumb__image"
+                        srcset="
+                          ../images/portfolio/mobile/inspiration-has-no-borders-450.jpg 450w,
+                          ../images/portfolio/mobile/inspiration-has-no-borders-450@2x.jpg 900w,
+                          ../images/portfolio/tablet/inspiration-has-no-borders-354.jpg 354w,
+                          ../images/portfolio/tablet/inspiration-has-no-borders-354@2x.jpg 708w,
+                          ../images/portfolio/desktop/inspiration-has-no-borders-370.jpg 370w,
+                          ../images/portfolio/desktop/inspiration-has-no-borders-370@2x.jpg 740w
+                        "
+                        src="../images/portfolio/mobile/inspiration-has-no-borders-450.jpg"
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                        
+                        alt="monitor with software"
+                      />
                     
-                        <img class="thumb__image" src="./images/inspiration-has-no-borders.jpg" alt="monitor with software" title="monitor with software"
-                            width="370" height="294">
+                        <!-- <img class="thumb__image" src="./images/inspiration-has-no-borders.jpg" alt="monitor with software" title="monitor with software"
+                            width="370" height="294"> -->
                 </div>
                         <div class="thumb__item">
                             <h2 class="thumb__title">Inspiration has no Borders</h2>
@@ -273,29 +274,29 @@
                 <div class="thumb">
                     <p class="thumb__overlai"> Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                         дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
-                   
-                        <img class="thumb__image" src="./images/edition-limited-edition.jpg" alt="magazine limited edition" title="magazine limited editio"
-                 t="seafood restaurant" title="seafood restaurant" width="370"
-                            height="294">
+                        <img
+                        class="thumb__image"
+                        srcset="
+                          ../images/portfolio/mobile/edition-limited-edition-450.jpg 450w,
+                          ../images/portfolio/mobile/edition-limited-edition-450@2x.jpg 900w,
+                          ../images/portfolio/tablet/edition-limited-edition-354.jpg 354w,
+                          ../images/portfolio/tablet/edition-limited-edition-354@2x.jpg 708w,
+                          ../images/portfolio/desktop/edition-limited-edition-370.jpg 370w,
+                          ../images/portfolio/desktop/edition-limited-edition-370@2x.jpg 740w
+                        "
+                        src="../images/portfolio/mobile/edition-limited-edition-450.jpg"
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                        
+                        alt="magazine limited edition"
+                      />
+                        <!-- <img class="thumb__image" src="./images/edition-limited-edition.jpg" alt="magazine limited edition" title="magazine limited editio"
+                            width="370" height="294"> -->
                 </div>
-                    <div class="thumb__item">
-                        <h2 class="thumb__title">Ресторан Seafood</h2>
-                        <p class="thumb__text">Додаток</p>
-                    </div>
-                </a>
-            </li>
-            <li class="examples__item">
-                <a class="examples-link" href="#">
-                <div class="thumb">
-                    <p class="thumb__overlai"> Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
-                    дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
-                   
-                    <img class="thumb__image" src="./images/project-prime.jpg" alt="headphone" title="headphone" width="370" height="294">
-                </div>
-                    <div class="thumb__item">
-                        <h2 class="thumb__title">Проєкт Prime</h2>
-                        <p class="thumb__text">Маркетинг</p>
-                    </div>
+                        <div class="thumb__item">
+                            <h2 class="thumb__title">Видання Limited Edition</h2>
+                            <p class="thumb__text">Дизайн</p>
+                        </div>
+                    
                 </a>
             </li>
             <li class="examples__item">
@@ -303,17 +304,195 @@
                 <div class="thumb">
                     <p class="thumb__overlai"> Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                         дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
-    
-                        <img class="thumb__image" src="./images/boxes-450.jpg" alt="two boxes" title="two boxes" width="370" height="294">
+                   
+                        <img
+                        class="thumb__image"
+                        srcset="
+                          ../images/portfolio/mobile/project-lab-450.jpg 450w,
+                          ../images/portfolio/mobile/project-lab-450@2x.jpg 900w,
+                          ../images/portfolio/tablet/project-lab-354.jpg 354w,
+                          ../images/portfolio/tablet/project-lab-354@2x.jpg 708w,
+                          ../images/portfolio/desktop/project-lab-370.jpg 370w,
+                          ../images/portfolio/desktop/project-lab-370@2x.jpg 740w
+                        "
+                        src="../images/portfolio/mobile/project-lab-450.jpg"
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                        
+                        alt="branded sticker"
+                      />
+                        <!-- <img class="thumb__image" src="./images/project-lab.jpg" alt="branded sticker" title="branded sticker" width="370" height="294"> -->
                 </div>
-                    
                     <div class="thumb__item">
-                        <h2 class="thumb__title">Проєкт Boxes</h2>
-                        <p class="thumb__text">Додаток</p>
+                        <h2 class="thumb__title">Проєкт LAB</h2>
+                        <p class="thumb__text">Маркетинг</p>
                     </div>
+                    
                 </a>
             </li>
             <li class="examples__item">
                 <a class="examples__link" href="#">
                 <div class="thumb">
-                    <p class="thumb__overlai"> Ресурс проп�
+                    <p class="thumb__overlai"> Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
+                        дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                    
+                        <img
+                        class="thumb__image"
+                        srcset="
+                          ../images/portfolio/mobile/growing-business-450.jpg 450w,
+                          ../images/portfolio/mobile/growing-business-450@2x.jpg 900w,
+                          ../images/portfolio/tablet/growing-business-354.jpg 354w,
+                          ../images/portfolio/tablet/growing-business-354@2x.jpg 708w,
+                          ../images/portfolio/desktop/growing-business-370.jpg 370w,
+                          ../images/portfolio/desktop/growing-business-370@2x.jpg 740w
+                        "
+                        src="../images/portfolio/mobile/growing-business-450.jpg"
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                        
+                        alt="a person is typing on a laptop"
+                      />
+                        <!-- <img class="thumb__image" src="./images/growing-business.jpg" alt="a person is typing on a laptop" title="a person is typing on a laptop"
+                            width="370" height="294"> -->
+                </div>
+                    <div class="thumb__item">
+                        <h2 class="thumb__title">Growing Business</h2>
+                        <p class="thumb__text">Додаток</p>
+                    </div>    
+                </a>
+            </li>
+        </ul>
+       </div>
+    </section>
+    </main>
+    <!--footer site-->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__item">
+                <div class="footer__contacts">
+                    <!--footer site logo-->
+                    <a class="logo" href="./index.html"><span>Web</span><span class="logo__basement">Studio</span></a>
+                    <!--location-->
+                    <address class="address">
+                        <ul class="list">
+                            <li class="list__item--address">
+                                <a class="address__geo--link address--contact" href="https://go.2gis.com/3j73v" target="_blank"
+                                    rel="noopener noreferrer nofollow">м.
+                                    Київ, пр-т Лесі Українки, 26</a>
+                            </li>
+                            <li class="list__item--address address--contact">
+                                <a class="address__mail--link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                            </li>
+                            <li class="list__item--address address--contact">
+                                <a class="address__tel--link" href="tel:+380961111111">+38 096 111 11 11</a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+                
+                <div class="footer__social">
+                    <h3 class="footer__title">приєднуйтесь</h3>
+                    <ul class="social">
+                        <li class="social__item">
+                            <a class="social__linc social--dark" href="#">
+                                <svg class="social__icon--instagram" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__linc social--dark" href="#">
+                                <svg class="social__icon--twitter" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__linc social--dark" href="#">
+                                <svg class="social__icon--facebook" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__linc social--dark" href="#">
+                                <svg class="social__icon--linkedin" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- subscription form -->
+                
+                <form class="footer__form" name="subscription-form">
+                    <label class="footer__label" id="subscription-form">Підпишіться на розсилку
+                        <input class="footer__input" type="email" name="subscription-form" placeholder="E-mail">
+                    </label>
+                    <button class="button button--submit" type="submit">Підписатися
+                        <svg class="button__icon--end" width="24" height="24">
+                            <use href="./images/icons.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                
+                </form>
+            </div>
+        </div>
+</footer>
+<!-- mobile-menu -->
+<div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+        <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" 
+        width="40" height="40">
+            <use class="icon__cross" href="./images/icon1.svg#icon-close"></use>
+        </svg>
+    </button>
+
+    <ul class="list mobile-menu">
+        <li class="mobile-item"><a href="./index.html" class="link">Студія</a></li>
+        <li class="mobile-item"><a href="./portfolio.html" class="link curent--link">Портфоліо</a></li>
+        <li class="mobile-item"><a href="#" class="link">Контакти</a></li>
+    </ul>
+    <ul class="list menu__list--contact">
+        <!--header e-mail address -->
+        <li class="menu__item--contact">
+        <a class="menu__link--mobile" href="tel:+380961111111">
+            +38 096 111 11 11
+        </a>
+        </li>
+        <!--header contact phone-->
+        <li class="menu__item--contact">
+            <a class="menu__link--messeg" href="mailto:info@devstudio.com">
+                info@devstudio.com
+            </a>
+        </li>
+    </ul>
+    <div class="header__social">
+        <ul class="social">
+            <li class="social__item">
+                <a class="social__item--menu" href="#">
+                    Instagram
+                </a>
+            </li>
+            <li class="social__item">
+                <a class="social__item--menu" href="#">
+                    Twitter
+                </a>
+            </li>
+            <li class="social__item">
+                <a class="social__item--menu" href="#">
+                    Facebook
+                </a>
+            </li>
+            <li class="social__item">
+                <a class="social__item--menu" href="#">
+                    LinkedIn
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<script src="./js/modal.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+crossorigin="anonymous"></script>
+<script defer src="./js/mobile-menu.js"></script>
+</body>
+</html>
